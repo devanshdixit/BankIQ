@@ -1,0 +1,24 @@
+# 🚫 Virtual environment
+.venv/
+env/
+venv/
+
+# 🧪 Python cache and logs
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+
+# 📦 Package metadata
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# 📊 Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# 💾 VSCode + Jupyter config
+.vscode/
+*.code-workspace
+*.DS_Store
