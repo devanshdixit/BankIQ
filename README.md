@@ -134,4 +134,4 @@ streamlit run scripts/streamlit_app.py
 
 **Devanshu Dixit**  
 Data & ML Practitioner | Fintech Enthusiast  
-[LinkedIn](https://linkedin.com/in/devanshu-dixit) • [GitHub](https://github.com/devanshudixit)
+[LinkedIn](https://linkedin.com/in/devanshudixit) • [GitHub](https://github.com/devanshdixit)
