@@ -1,13 +1,12 @@
-
 # 💼 BankIQ: Loan Default Risk Prediction & Explainability
 
-A complete end-to-end data science project simulating a bank's customer base, engineering financial and behavioral features, and predicting loan default risk using interpretable ML techniques like SHAP.
+A complete end-to-end data science project simulating a bank's customer base, engineering financial and behavioral features, predicting loan default risk using interpretable ML techniques like SHAP, and visualizing predictions through an interactive Streamlit app.
 
 ---
 
 ## 🚀 Overview
 
-**Goal:** Build a comprehensive pipeline to simulate, analyze, and predict loan default risk — then explain the predictions using SHAP for interview and business stakeholder use.
+**Goal:** Build a comprehensive pipeline to simulate, analyze, and predict loan default risk — then explain the predictions using SHAP and deploy insights through an interactive UI for stakeholders.
 
 ---
 
@@ -53,15 +52,29 @@ Simulated using `Faker`, covering:
 
 ## 🔍 SHAP Insights
 
-### Top Predictors (from SHAP bar plot):
+### Top Predictors:
 1. `AvgEMItoIncomeRatio`
 2. `AvgLoanAmount`
 3. `Income`
 4. `LoanBurdenScore`
 5. `CreditScore`
 
-### Sample Force Plot:
-Explains individual prediction breakdown (see `notebooks/3_SHAP_Explainability.ipynb`).
+### Local Force Plot:
+Explains individual prediction breakdown via Streamlit app.
+
+---
+
+## 🌐 Interactive App (Streamlit)
+
+### Preview:
+- Select a customer and get real-time risk prediction
+- Visualize SHAP force plot for explainability
+- View summary plots globally
+
+### Run Locally:
+```bash
+streamlit run script/streamlit_app.py
+```
 
 ---
 
@@ -70,14 +83,20 @@ Explains individual prediction breakdown (see `notebooks/3_SHAP_Explainability.i
 ```
 BankIQ/
 ├── data/
-│   └── processed/ (sample .csv)
+│   └── processed/
+│       └── enhanced_customers.csv
 ├── notebooks/
-│   ├── 1_Data_Preparation.ipynb
-│   ├── 2_Modeling.ipynb
-│   └── 3_SHAP_Explainability.ipynb
+│   ├── 01_EDA.ipynb
+│   ├── 02_Feature_Engineering.ipynb
+│   ├── 03_Model_XGBoost.ipynb
+│   └── 04_Explainability_SHAP.ipynb
 ├── scripts/
-│   └── feature_engineering.py
-├── README.md
+│   ├── 01_data_generation.py
+│   ├── 02_feature_engineering.py
+│   └── data_cleaning.py
+|   └── streamlit_app.py
+├── requirements.txt
+└── README.md
 ```
 
 ---
@@ -88,14 +107,15 @@ BankIQ/
 git clone https://github.com/<your-username>/BankIQ.git
 cd BankIQ
 
-# Install requirements
+# Install dependencies
 pip install -r requirements.txt
 
 # Run feature engineering
-python scripts/feature_engineering.py
+python scripts/02_feature_engineering.py
 
-# Launch Jupyter for notebooks
+# Explore via Jupyter or launch Streamlit app
 jupyter notebook
+streamlit run scripts/streamlit_app.py
 ```
 
 ---
@@ -105,12 +125,13 @@ jupyter notebook
 ✅ Credit Risk  
 ✅ Loan Approval Scoring  
 ✅ Customer Engagement Segmentation  
-✅ Explainable AI (SHAP)
+✅ Explainable AI (SHAP)  
+✅ Data Storytelling through Dashboards
 
 ---
 
 ## 🙌 Author
 
-Devanshu Dixit  
+**Devanshu Dixit**  
 Data & ML Practitioner | Fintech Enthusiast  
-[LinkedIn](https://linkedin.com/in/devanshu-dixit) | [GitHub](https://github.com/devanshudixit)
+[LinkedIn](https://linkedin.com/in/devanshu-dixit) • [GitHub](https://github.com/devanshudixit)
